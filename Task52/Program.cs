@@ -30,7 +30,7 @@ void Print(int[,] array1)
     }
 }
 
-double[] Average(int[,] array)
+double[] Average(int[,] array) // Сделал по вашему примеру, буду еще раз пересматривать семинар и разбираться
 {
     double[] res = new double[array.GetLength(1)];
     for (int j = 0; j < array.GetLength(1); j++)
