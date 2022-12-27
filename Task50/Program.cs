@@ -49,7 +49,7 @@ void Array(int[,] array2, int M)
         Console.WriteLine($"{M}--> такого числа в массиве нет");
 }
 
-Console.WriteLine("num");
+Console.Write("Введите число для проверки наличия его в массиве: ");
 int N = int.Parse(Console.ReadLine()!);
 int[,] array = FillArray(3, 4, -10, 10);
 Print(array);
