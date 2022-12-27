@@ -2,7 +2,6 @@
 // 0,5 7 -2 -0,2
 // 1 -3,3 8 -9,9
 // 8 7,8 -7,1 9
-
 double[,] Fill(int a,int b, int min, int max)
 {
     double[,] arr1 = new double[a,b];
@@ -10,8 +9,7 @@ double[,] Fill(int a,int b, int min, int max)
     {
         for (int j = 0; j < b; j++)
         {
-            arr1[i, j] = Convert.ToDouble(new Random().Next(min, max))/10;  // Скажу честно - это подсмотрел,но не понимаю,как это работет.
-                                                                                // Что мы конвертируем и почему делим на 10? 
+            arr1[i, j] = Convert.ToDouble(new Random().Next(min, max))/10;  
         }
     }
     return arr1;
@@ -29,5 +27,4 @@ void Print(double[,] arr2)
     }
 }
 double[,] array = Fill(3, 4, -10, 10);
-
 Print(array);
