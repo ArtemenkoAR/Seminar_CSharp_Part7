@@ -10,7 +10,7 @@ double[,] Fill(int a,int b, int min, int max)
     {
         for (int j = 0; j < b; j++)
         {
-            arr1[i, j] = Convert.ToDouble(new Random().NextDouble(min, max))/10  // Скажу честно - это подсмотрел,но не понимаю,как это работет.
+            arr1[i, j] = Convert.ToDouble(new Random().Next(min, max))/10;  // Скажу честно - это подсмотрел,но не понимаю,как это работет.
                                                                                 // Что мы конвертируем и почему делим на 10? 
         }
     }
